@@ -1,0 +1,6 @@
+<h1>Contador App</h1>
+<button (click)="decrease()">-{{ amount }}</button>
+<span>{{ contador }}</span>
+<button (click)="increase()">+{{ amount }}</button>
+<hr />
+<div>Amount : <input type="number" [(ngModel)]="amount" /></div>

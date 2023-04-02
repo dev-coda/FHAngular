@@ -1,0 +1,25 @@
+<p>{{ nombre }}</p>
+<dl>
+  <dt>Nombre</dt>
+  <dd><input [(ngModel)]="nombre" placeholder="nombre" /></dd>
+
+  <dt>Edad</dt>
+  <dd><input [(ngModel)]="edad" placeholder="edad" /></dd>
+
+  <dt>fEdad</dt>
+  <dd>{{ obtenerEdad() }}</dd>
+
+  <dt>fHeroe</dt>
+  <dd>{{ obtenerHeroe() }}</dd>
+
+  <dt>Nombre Capitalizado</dt>
+  <dd>{{ nombreCapitalizado }}</dd>
+</dl>
+<hr />
+<dt>Nuevo Nombre</dt>
+<dd><input placeholder="nombre" #nnombre /></dd>
+<dt>Nueva Edad</dt>
+<dd><input type="number" placeholder="edad" #nedad /></dd>
+<hr />
+<button (click)="changeName(nnombre.value)">Cambiar heroe</button>
+<button (click)="changeAge(nedad.value)">Cambiar Edad</button>
